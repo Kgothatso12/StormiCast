@@ -1,15 +1,40 @@
 body {
-  background: #c0bffa;
+  background: #7271b7;
   font-family: "Nunito Sans", sans-serif;
 }
+a {
+  color: rgba(35, 35, 229, 0.883);
+}
+a:hover {
+  color: rgba(214, 235, 244, 0.999);
+}
+.current-units {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.99);
+}
+.current-weather h1 {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+}
 
-.search-input {
-  background: #ececf6;
-  width: 60%;
-  border: none;
-  padding: 16px;
+.current-weather p {
+  font-weight: bold;
+  color: rgb(79, 77, 77);
+}
+.current-weather strong {
+  color: rgb(51, 56, 217);
+}
+footer {
+  border-top: 30px solid #aaa9d7;
   font-size: 14px;
-  border-radius: 6px;
+  text-align: center;
+  color: rgba(33, 31, 31, 0.686);
+}
+header {
+  border-bottom: 30px solid #aaa9d7;
 }
 .search-button {
   padding: 16px;
@@ -21,16 +46,37 @@ body {
   border-radius: 6px;
   transition: 0.2s ease-in-out;
 }
+
 .search-button:hover {
   color: #6564af;
   background: whitesmoke;
 }
+.search-input {
+  background: #f6f6fc;
+  width: 60%;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 6px;
+}
 
 .weather-container {
   max-width: 600px;
-  background-color: #dbdaf4f8;
+  background-color: #dbdaf488;
   margin: 60px auto;
   padding: 60px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
+}
+.weather-icon {
+  height: 89px;
+  width: 89px;
+}
+.weather-main-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-temperature-contents {
+  display: flex;
 }
