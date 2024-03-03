@@ -11,29 +11,32 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
     <title>StormiCast</title>
   </head>
   <body>
     <div class="weather-container">
       <header>
-        <form action="">
+        <form id="search-form">
           <input
-            type="text"
+            type="search"
             placeholder="Enter a city.."
             class="search-input"
-            id="search-input"
+            id="search-input-form"
             required
           />
-          <input type="button" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="weather-main-contents">
           <div class="current-weather">
-            <h1>Paris</h1>
+            <h1 id="city"></h1>
             <p>
-              Sunday 11:55, overcast clouds Humidity: <strong>94%</strong>,
-              Wind: <strong>4.63km/h</strong>
+              Sunday 11:55,
+              <span id="current-forecast"></span> Humidity:
+              <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-temperature-contents">
@@ -44,7 +47,7 @@
                 alt="weather-icon"
               />
             </div>
-            <div class="current-units">6°C</div>
+            <div class="current-units" id="current-units">6°C</div>
           </div>
         </div>
       </main>
