@@ -1,1 +1,36 @@
+body {
+  background: #c0bffa;
+  font-family: "Nunito Sans", sans-serif;
+}
 
+.search-input {
+  background: #ececf6;
+  width: 60%;
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.search-button {
+  padding: 16px;
+  border: none;
+  font-size: 14px;
+  background: #6564af;
+  color: whitesmoke;
+  margin-left: 10px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+.search-button:hover {
+  color: #6564af;
+  background: whitesmoke;
+}
+
+.weather-container {
+  max-width: 600px;
+  background-color: #dbdaf4f8;
+  margin: 60px auto;
+  padding: 60px;
+  border: none;
+  border-radius: 6px;
+}
