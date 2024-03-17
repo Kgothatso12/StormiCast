@@ -80,3 +80,15 @@ header {
 .weather-temperature-contents {
   display: flex;
 }
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
+.weather-forecast-min {
+  color: whitesmoke;
+}
+.upcoming-days {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(241, 241, 155);
+}
